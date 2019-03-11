@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 267410339}
   - component: {fileID: 267410342}
   m_Layer: 0
-  m_Name: Hologram
+  m_Name: Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +148,6 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -186,6 +185,9 @@ VisualEffect:
       - m_Value: 1.5
         m_Name: Depth
         m_Overridden: 0
+      - m_Value: 0.61811453
+        m_Name: Progress
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -490,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &443225897
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -508,7 +510,11 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 114566926248974660, guid: 81cfd6a493008889fadbc40515320fb4, type: 2}
     value: {fileID: 267410342}
-  - key: {fileID: 114566926248974660, guid: 285d4675ad83f427abb0d464c0444b7d, type: 2}
+  - key: {fileID: 0}
+    value: {fileID: 267410342}
+  - key: {fileID: 114425436551205088, guid: 285d4675ad83f427abb0d464c0444b7d, type: 2}
+    value: {fileID: 1210204346}
+  - key: {fileID: 114307034507360236, guid: 285d4675ad83f427abb0d464c0444b7d, type: 2}
     value: {fileID: 267410342}
   m_ExposedReferences:
     m_References: []
@@ -614,6 +620,7 @@ GameObject:
   - component: {fileID: 1210204344}
   - component: {fileID: 1210204343}
   - component: {fileID: 1210204342}
+  - component: {fileID: 1210204346}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -707,7 +714,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 1500
+  displayLightIntensity: 0
   displayAreaLightEmissiveMesh: 0
   lightLayers: 1
   shadowNearPlane: 0.1
@@ -726,7 +733,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 119.3662
+  m_Intensity: 1.4912717
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -767,6 +774,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1210204346
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210204341}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1434376146
 GameObject:
   m_ObjectHideFlags: 0
