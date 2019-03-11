@@ -1,0 +1,5 @@
+The point cloud files contained in this directory are created by Jeffrey Tuhtan
+and licensed under a Creative Commons Attribution 4.0 International License (CC
+BY 4.0). Please see the original Sketchfab page for further details.
+
+https://sketchfab.com/3d-models/arge-beutelbach-6c82e6f76167440cbff60862ea418f15
